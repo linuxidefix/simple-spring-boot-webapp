@@ -35,4 +35,9 @@ public class MainController {
 		// This returns a JSON or XML with the users
 		return userRepository.findAll();
 	}
+
+	@GetMapping(path="/version")
+	public @ResponseBody String getVersion(){
+		return "1";
+	}
 }
