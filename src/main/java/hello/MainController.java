@@ -38,6 +38,6 @@ public class MainController {
 
 	@GetMapping(path="/version")
 	public @ResponseBody String getVersion(){
-		return "1";
+		return "2";
 	}
 }
